@@ -1,0 +1,15 @@
+curl -X POST \
+-H 'Content-Type: application/json' \
+-d '{"content":"Hello World","attachment":"hello.jpg"}' \
+https://ytsxa4u7v5.execute-api.us-east-1.amazonaws.com/notes
+
+curl https://ytsxa4u7v5.execute-api.us-east-1.amazonaws.com/notes/9d8d8af0-7eee-11ef-9f09-d7457c2de9dd
+
+curl https://ytsxa4u7v5.execute-api.us-east-1.amazonaws.com/notes
+
+curl -X PUT \
+-H 'Content-Type: application/json' \
+-d '{"content":"New World","attachment":"new.jpg"}' \
+https://ytsxa4u7v5.execute-api.us-east-1.amazonaws.com/notes/9d8d8af0-7eee-11ef-9f09-d7457c2de9dd
+
+curl -X DELETE https://ytsxa4u7v5.execute-api.us-east-1.amazonaws.com/notes/9d8d8af0-7eee-11ef-9f09-d7457c2de9dd
